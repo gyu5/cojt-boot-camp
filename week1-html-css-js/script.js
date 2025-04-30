@@ -1,3 +1,4 @@
 function changeText() {
-  document.querySelector("h1").textContent = "Web開発、楽しい！";
+  document.querySelector("h1").textContent = "Webたのしい";
+  document.querySelector("p").textContent = "Webを始めよう";
 }
