@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './index.css';
+import Message from "./Message";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,9 +12,16 @@ function App() {
       <button onClick={() => setCount(count + 1)}>
         増やす
       </button>
+      <button onClick={() => setCount(count - 1)}>
+        減らす
+      </button>
+
       {
         count === 5 && <p>5回クリックしたよ!</p> 
       }
+      <Message text = "sdafjk" />
+      <Message hoge = "sdadfasdk" />
+
     </div>
   );
 }
